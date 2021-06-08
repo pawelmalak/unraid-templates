@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/109945-support-flame/</Support>
   <Project>https://github.com/pawelmalak/flame</Project>
   <Overview>Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.</Overview>
   <Category>Tools: Network:Web</Category>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1623153123</DateInstalled>
+  <DateInstalled>1623158916</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.</Description>
