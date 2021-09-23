@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/114026-support-snippet-box/</Support>
+  <Support>https://forums.unraid.net/topic/114026-support-snippet-box</Support>
   <Project>https://github.com/pawelmalak/snippet-box</Project>
   <Overview>Snippet Box is a simple self-hosted app for organizing your code snippets. It allows you to easily create, edit, browse and manage your snippets in various languages.</Overview>
   <Category>Productivity: Tools:</Category>
@@ -17,7 +17,7 @@
   <ExtraParams>--init</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1632399106</DateInstalled>
+  <DateInstalled>1632404478</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Snippet Box is a simple self-hosted app for organizing your code snippets. It allows you to easily create, edit, browse and manage your snippets in various languages.</Description>
@@ -25,7 +25,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>5031</HostPort>
+        <HostPort>5039</HostPort>
         <ContainerPort>5000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -33,13 +33,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/snippet-box</HostDir>
+      <HostDir>/mnt/user/appdata/snippet-box/</HostDir>
       <ContainerDir>/app/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Application Data" Target="/app/data" Default="" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/snippet-box</Config>
+  <Config Name="Application Data" Target="/app/data" Default="" Mode="rw" Description="Container Path: /app/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/snippet-box/</Config>
   <Config Name="Application Port" Target="5000" Default="" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="false" Mask="false">5039</Config>
 </Container>
