@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>gameyfin</Name>
+  <Repository>grimsi/gameyfin:latest</Repository>
+  <Registry>https://hub.docker.com/r/grimsi/gameyfin</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/grimsi/gameyfin/issues</Support>
+  <Project>https://github.com/grimsi/gameyfin</Project>
+  <Overview>Gameyfin is a simple manager for your game library&#xD;
+&#xD;
+IGDB account is required in order to fetch games metadata from the database&#xD;
+&#xD;
+How to obtain API token:&#xD;
+==============================&#xD;
+Read docs: https://api-docs.igdb.com/#about&#xD;
+==============================&#xD;
+1. Sign Up with Twitch for a free account&#xD;
+2. Ensure you have Two Factor Authentication enabled&#xD;
+3. Register your application&#xD;
+4. Manage your newly created application&#xD;
+5. Generate a Client Secret by pressing "New Secret"&#xD;
+6. Take note of the Client ID and Client Secret</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/pawelmalak/unraid-templates/blob/master/templates/icons/gameyfin.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1665048514</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8413</Config>
+  <Config Name="Library" Target="/opt/gameyfin-library" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false" />
+  <Config Name="GAMEYFIN_USER" Target="GAMEYFIN_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="GAMEYFIN_PASSWORD" Target="GAMEYFIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="GAMEYFIN_IGDB_API_CLIENT_ID" Target="GAMEYFIN_IGDB_API_CLIENT_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="GAMEYFIN_IGDB_API_CLIENT_SECRET" Target="GAMEYFIN_IGDB_API_CLIENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false" />
+</Container>
