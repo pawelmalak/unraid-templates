@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/Part-DB/Part-DB-server/issues</Support>
   <Project>https://github.com/Part-DB/Part-DB-server</Project>
   <Overview>Part-DB is an Open-Source inventory management system for your electronic components. It is installed on a web server and so can be accessed with any browser without the need to install additional software.&#xD;
 &#xD;
