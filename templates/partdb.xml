@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>partdb</Name>
+  <Repository>jbtronics/part-db1:latest</Repository>
+  <Registry>https://hub.docker.com/r/jbtronics/part-db1</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Part-DB/Part-DB-server</Project>
+  <Overview>Part-DB is an Open-Source inventory management system for your electronic components. It is installed on a web server and so can be accessed with any browser without the need to install additional software.&#xD;
+&#xD;
+After creating container you need to create the initial database with:&#xD;
+`docker exec --user=www-data partdb php bin/console doctrine:migrations:migrate`&#xD;
+and watch for the password output.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/pawelmalak/unraid-templates/blob/master/templates/icons/partdb.png?raw=true</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1693056716</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="Uploads" Target="/var/www/html/uploads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Public Media" Target="/var/www/html/public/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database" Target="/var/www/html/var/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/partdb/db</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite:///%kernel.project_dir%/var/db/app.db</Config>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">docker</Config>
+  <Config Name="DEFAULT_LANG" Target="DEFAULT_LANG" Default="" Mode="" Description="The language to use serverwide as default (en, de, ru, etc.)" Type="Variable" Display="always" Required="false" Mask="false">en</Config>
+  <Config Name="DEFAULT_TIMEZONE" Target="DEFAULT_TIMEZONE" Default="" Mode="" Description="The default timezone to use serverwide (e.g. Europe/Berlin)" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
+  <Config Name="BASE_CURRENCY" Target="BASE_CURRENCY" Default="" Mode="" Description="The currency that is used inside the DB (and is assumed when no currency is set). This can not be changed later, so be sure to set it the currency used in your country" Type="Variable" Display="always" Required="false" Mask="false">EUR</Config>
+  <Config Name="INSTANCE_NAME" Target="INSTANCE_NAME" Default="" Mode="" Description="The name of this installation. This will be shown as title in the browser and in the header of the website" Type="Variable" Display="always" Required="false" Mask="false">Part-DB</Config>
+  <Config Name="ALLOW_ATTACHMENT_DOWNLOADS" Target="ALLOW_ATTACHMENT_DOWNLOADS" Default="" Mode="" Description="Allow users to download attachments to the server by providing an URL. This could be a potential security issue, as the user can retrieve any file the server has access to (via internet)" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>
