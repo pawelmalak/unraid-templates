@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>moodist</Name>
+  <Repository>ghcr.io/remvze/moodist:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/remvze/moodist/issues</Support>
+  <Project>https://github.com/remvze/moodist</Project>
+  <Overview>Ambient sounds for focus and calm</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/pawelmalak/unraid-templates/blob/master/templates/icons/moodist.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704198614</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false" />
+</Container>
